@@ -1,0 +1,44 @@
+@font-face
+{
+	font-family:terminus;
+	src:url("../font/terminus.ttf");
+}
+
+body{
+    background: lightgrey;   
+}
+
+.message{   
+    color: white;
+    background: black;
+    border-radius: 5mm;
+    border: outset 1mm red;
+    margin-bottom: .5em;
+    font-size: x-large;
+    max-width: fit-content;
+}
+
+.name {
+    color: black;
+    background: white;
+    text-align: center;
+    font-weight: bold;
+    margin: -1mm;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-radius: 5mm;
+    border: ridge 1mm red;
+}
+
+.content{
+    font-family:terminus;
+    font-size:large;
+    margin: 2mm;
+}
+
+#textInput{
+    position: fixed;
+    height: 80px;
+    bottom: 0px;
+    width: -webkit-fill-available;
+}
