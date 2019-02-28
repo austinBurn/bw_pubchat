@@ -7,28 +7,17 @@
 <body>
 
 <?php
+include_once("server.php");
+
 $myfile = fopen("./chathist/history.txt", "r") or die("Unable to open file!");
 //while(!feof($myfile)) {
   //echo fgets($myfile) . "<br>";
 //}
-//fclose($myfile);
+fclose($myfile);
 
 
 //fwrite($myfile, "00000008, GOD, Let there be burn.world chat.");
-newMsg("GOD", "Let there be burn.world chat.");
-
-function newMsg($userName, $content){
-    //clean(userName)
-    //clean Content;
-    $message->ts = microtime(true);
-    $message->u = $userName;
-    $message->data = $content;
-    
-    $myfile = fopen("./chathist/history.txt", "a") or die("Unable to open file!");
-    fwrite($myfile,json_encode($message)."\n");
-    //fwrite($myfile,"\n");
-    fclose($myfile);
-}
+//newMsg("???", "who am i");
 ?>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"

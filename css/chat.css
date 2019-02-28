@@ -5,7 +5,8 @@
 }
 
 body{
-    background: lightgrey;   
+    background: lightgrey;
+    width: 240px;    
 }
 
 .message{   
@@ -36,9 +37,17 @@ body{
     margin: 2mm;
 }
 
-#textInput{
+#chatZone{
+    margin-bottom: 50px;
+}
+
+#entryZone{
+    display: flex;
     position: fixed;
-    height: 80px;
     bottom: 0px;
+    width: 240px;
+}
+
+#textInput{
     width: -webkit-fill-available;
 }
