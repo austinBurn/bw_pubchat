@@ -49,5 +49,6 @@ body{
 }
 
 #textInput{
+    font-size: x-large; 
     width: -webkit-fill-available;
 }
